@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>My website</title>
+    <title>وب سایت تک صفحه‌ای</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header id="header">
-        <div class="logo">
-            <a href="poster_f423e990-f630-4f05-bec2-749e489fb0bc.webp" id="logo">Logo</a>
-          
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="mainicon">
-            <div class="menu" id="menu">
-                <i class="bi bi-list"></i>
-            </div>
-        </label>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
 
-    <section>
-        <div class="main">
-            <div class="images">
-                <!-- محتوای تصاویر -->
-            </div>
-            <div class="Information">
-                <h1>Hi, I'm Benjamin</h1>
-                <div class="animated_text">
-                    <h1 class="title">my website</h1>
-                </div>
-                <div class="social">
-                    <a href="https://www.youtube.com/@rtwitts"><i class="bi bi-youtube"></i></a>
-                    <a href="https://instagram.com/moto_kabir3?igshid=NzZlODBkYWE4Ng=="><i class="bi bi-instagram"></i></a>
-                    <a href="https://t.me/coinextrade126"><i class="bi bi-telegram"></i></a>
-                </div>
+    <!-- نوار ناوبری -->
+    <nav>
+        <ul>
+            <li><a href="#section1">بخش 1</a></li>
+            <li><a href="#section2">بخش 2</a></li>
+            <li><a href="#section3">بخش 3</a></li>
+            <li><a href="#section4">بخش 4</a></li>
+            <li><a href="#section5">بخش 5</a></li>
+            <li><a href="#section6">بخش 6</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+    </nav>
 
-            
-
-                </button>
-            </div>
-        </div>
+    <!-- بخش‌ها -->
+    <section id="section1">
+        <h1>بخش 1</h1>
+        <p>محتوای بخش 1</p>
     </section>
-</body>
 
+    <section id="section2">
+        <h1>بخش 2</h1>
+        <p>محتوای بخش 2</p>
+    </section>
+
+    <section id="section3">
+        <h1>بخش 3</h1>
+        <p>محتوای بخش 3</p>
+    </section>
+
+    <section id="section4">
+        <h1>بخش 4</h1>
+        <p>محتوای بخش 4</p>
+    </section>
+
+    <section id="section5">
+        <h1>بخش 5</h1>
+        <p>محتوای بخش 5</p>
+    </section>
+
+    <section id="section6">
+        <h1>بخش 6</h1>
+        <p>محتوای بخش 6</p>
+    </section>
+
+    <!-- فرم تماس -->
+    <section id="contact">
+        <h1>تماس با ما</h1>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="نام" required>
+            <input type="email" name="email" placeholder="ایمیل" required>
+            <textarea name="message" placeholder="پیام" required></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+
+    <!-- ویدیو با پخش خودکار -->
+    <video autoplay muted loop>
+        <source src="your_video.mp4" type="video/mp4">
+        مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+    </video>
+
+    <script src="script.js"></script>
+</body>
 </html>
