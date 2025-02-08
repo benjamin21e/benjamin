@@ -3,72 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب سایت تک صفحه‌ای</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>پورتفولیوی برنامه‌نویسی</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- نوار ناوبری -->
-    <nav>
-        <ul>
-            <li><a href="#section1">بخش 1</a></li>
-            <li><a href="#section2">بخش 2</a></li>
-            <li><a href="#section3">بخش 3</a></li>
-            <li><a href="#section4">بخش 4</a></li>
-            <li><a href="#section5">بخش 5</a></li>
-            <li><a href="#section6">بخش 6</a></li>
-            <li><a href="#contact">تماس</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>سلام، من یک برنامه‌نویس هستم!</h1>
+        <p>این نمونه‌ای از سایت شخصی من است که پروژه‌هایم را نمایش می‌دهد.</p>
+        <a href="#" class="button">تماس با من</a>
+    </header>
 
-    <!-- بخش‌ها -->
-    <section id="section1">
-        <h1>بخش 1</h1>
-        <p>محتوای بخش 1</p>
+    <section class="projects">
+        <div class="project-card">
+            <h2>پروژه شماره ۱</h2>
+            <p>یک پروژه جذاب که با جدیدترین تکنولوژی‌ها ساخته شده است.</p>
+            <a href="#" class="button">مشاهده پروژه</a>
+        </div>
+
+        <div class="project-card">
+            <h2>پروژه شماره ۲</h2>
+            <p>این پروژه شامل کدنویسی پیشرفته و طراحی مدرن است.</p>
+            <a href="#" class="button">مشاهده پروژه</a>
+        </div>
     </section>
 
-    <section id="section2">
-        <h1>بخش 2</h1>
-        <p>محتوای بخش 2</p>
-    </section>
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2025</p>
+    </footer>
 
-    <section id="section3">
-        <h1>بخش 3</h1>
-        <p>محتوای بخش 3</p>
-    </section>
-
-    <section id="section4">
-        <h1>بخش 4</h1>
-        <p>محتوای بخش 4</p>
-    </section>
-
-    <section id="section5">
-        <h1>بخش 5</h1>
-        <p>محتوای بخش 5</p>
-    </section>
-
-    <section id="section6">
-        <h1>بخش 6</h1>
-        <p>محتوای بخش 6</p>
-    </section>
-
-    <!-- فرم تماس -->
-    <section id="contact">
-        <h1>تماس با ما</h1>
-        <form action="submit_form.php" method="POST">
-            <input type="text" name="name" placeholder="نام" required>
-            <input type="email" name="email" placeholder="ایمیل" required>
-            <textarea name="message" placeholder="پیام" required></textarea>
-            <button type="submit">ارسال</button>
-        </form>
-    </section>
-
-    <!-- ویدیو با پخش خودکار -->
-    <video autoplay muted loop>
-        <source src="your_video.mp4" type="video/mp4">
-        مرورگر شما از ویدیو پشتیبانی نمی‌کند.
-    </video>
-
-    <script src="script.js"></script>
 </body>
 </html>
