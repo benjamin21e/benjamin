@@ -1,74 +1,121 @@
-/* تنظیمات کلی صفحه */
+/* تنظیمات کلی */
 body {
-    background-color: #121212; /* پس‌زمینه تیره */
-    color: #EAEAEA; /* متن روشن */
-    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-}
-
-/* استایل هدر */
-header {
-    padding: 50px 20px;
-}
-
-h1 {
-    font-size: 32px;
-    color: #00A3FF; /* آبی نئونی */
-}
-
-p {
-    font-size: 18px;
-    color: #EAEAEA;
-}
-
-/* دکمه‌ها */
-.button {
-    display: inline-block;
-    background-color: #00A3FF; /* آبی نئونی */
-    color: #121212;
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.button:hover {
-    background-color: #00FF99; /* تغییر به سبز نئونی */
-    transform: scale(1.05);
-}
-
-/* استایل بخش پروژه‌ها */
-.projects {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 40px 20px;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* کارت‌های پروژه */
-.project-card {
-    background-color: #1E1E1E; /* خاکستری تیره */
+.container {
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #00a3ff;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    box-shadow: 0 0 20px #00a3ff;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+/* هدر و ناوبری */
+.header .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #00a3ff;
+    padding-bottom: 10px;
+}
+
+.header .nav-bar a {
+    text-decoration: none;
+    color: #00a3ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav-bar a:hover {
+    color: #00ff99;
+}
+
+/* محتوای اصلی */
+.content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content h1 {
+    color: #00a3ff;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #00a3ff;
+}
+
+.content p {
+    color: #eaeaea;
+    margin-bottom: 20px;
+}
+
+.neon-button {
+    padding: 10px 20px;
+    background-color: #00a3ff;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00a3ff;
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    background-color: #00ff99;
+    box-shadow: 0 0 20px #00ff99;
+}
+
+/* ویجت‌ها */
+.widgets {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.widget {
+    width: 70px;
+    height: 70px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00a3ff;
+    font-size: 18px;
+    text-shadow: 0 0 10px #00a3ff;
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.5);
 }
 
 /* فوتر */
-footer {
-    background-color: #1E1E1E;
-    padding: 15px;
-    color: #EAEAEA;
+.footer {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
+}
+
+.footer-button {
+    padding: 10px 15px;
+    background-color: #00a3ff;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00a3ff;
+    transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #00ff99;
+    box-shadow: 0 0 20px #00ff99;
 }
