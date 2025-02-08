@@ -1,7 +1,7 @@
 /* تنظیمات کلی */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background: #0d0d0d;
   color: #fff;
   display: flex;
@@ -11,41 +11,44 @@ body {
   overflow: hidden;
 }
 
-/* کانتینر اصلی */
-.container {
-  text-align: center;
+.main-container {
   background: #1a1a1a;
-  padding: 20px;
-  border: 2px solid #00ffff;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #00ffff;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  display: grid;
+  gap: 20px;
 }
 
 /* هدر */
-header h1 {
-  font-size: 2.5rem;
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
+.header {
+  text-align: center;
 }
 
-header .description {
+.title {
+  color: #00ffff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+.subtitle {
   color: #bbb;
   margin: 10px 0 20px;
 }
 
-/* دکمه‌ها */
 .neon-button {
   background: none;
-  color: #00ffff;
   border: 2px solid #00ffff;
-  border-radius: 5px;
+  color: #00ffff;
   padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
   text-shadow: 0 0 5px #00ffff;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .neon-button:hover {
@@ -58,29 +61,36 @@ header .description {
 .widgets {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  gap: 10px;
 }
 
 .widget {
   background: #333;
   color: #00ffff;
   font-size: 1.5rem;
-  padding: 15px;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
   border-radius: 10px;
   box-shadow: 0 0 10px #00ffff;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+/* بخش جانبی */
+.side-info {
+  color: #00ffff;
+  font-size: 1.2rem;
+  border: 1px solid #00ffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff;
 }
 
 /* دکمه‌های پایین */
-.buttons {
-  margin-top: 20px;
+.footer-buttons {
+  text-align: center;
 }
 
-.buttons .neon-button {
+.footer-buttons .neon-button {
   margin: 0 10px;
 }
