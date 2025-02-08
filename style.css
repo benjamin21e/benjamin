@@ -1,121 +1,86 @@
 /* تنظیمات کلی */
 body {
-    background-color: #0d0d0d;
-    color: #eaeaea;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* کانتینر اصلی */
 .container {
-    width: 90%;
-    max-width: 800px;
-    border: 2px solid #00a3ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 20px #00a3ff;
+  text-align: center;
+  background: #1a1a1a;
+  padding: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffff;
+  width: 90%;
+  max-width: 600px;
 }
 
-/* هدر و ناوبری */
-.header .nav-bar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #00a3ff;
-    padding-bottom: 10px;
+/* هدر */
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
-.header .nav-bar a {
-    text-decoration: none;
-    color: #00a3ff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+header .description {
+  color: #bbb;
+  margin: 10px 0 20px;
 }
 
-.header .nav-bar a:hover {
-    color: #00ff99;
-}
-
-/* محتوای اصلی */
-.content {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.content h1 {
-    color: #00a3ff;
-    font-size: 2rem;
-    text-shadow: 0 0 10px #00a3ff;
-}
-
-.content p {
-    color: #eaeaea;
-    margin-bottom: 20px;
-}
-
+/* دکمه‌ها */
 .neon-button {
-    padding: 10px 20px;
-    background-color: #00a3ff;
-    border: none;
-    border-radius: 5px;
-    color: #121212;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 0 15px #00a3ff;
-    transition: all 0.3s ease;
+  background: none;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-shadow: 0 0 5px #00ffff;
+  transition: 0.3s ease;
 }
 
 .neon-button:hover {
-    background-color: #00ff99;
-    box-shadow: 0 0 20px #00ff99;
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff;
 }
 
 /* ویجت‌ها */
 .widgets {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 
 .widget {
-    width: 70px;
-    height: 70px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #00a3ff;
-    font-size: 18px;
-    text-shadow: 0 0 10px #00a3ff;
-    box-shadow: 0 0 15px rgba(0, 163, 255, 0.5);
+  background: #333;
+  color: #00ffff;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* فوتر */
-.footer {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+/* دکمه‌های پایین */
+.buttons {
+  margin-top: 20px;
 }
 
-.footer-button {
-    padding: 10px 15px;
-    background-color: #00a3ff;
-    border: none;
-    border-radius: 5px;
-    color: #121212;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 0 15px #00a3ff;
-    transition: all 0.3s ease;
-}
-
-.footer-button:hover {
-    background-color: #00ff99;
-    box-shadow: 0 0 20px #00ff99;
+.buttons .neon-button {
+  margin: 0 10px;
 }
