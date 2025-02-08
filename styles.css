@@ -1,77 +1,74 @@
-* {
+/* تنظیمات کلی صفحه */
+body {
+    background-color: #121212; /* پس‌زمینه تیره */
+    color: #EAEAEA; /* متن روشن */
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+/* استایل هدر */
+header {
+    padding: 50px 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+h1 {
+    font-size: 32px;
+    color: #00A3FF; /* آبی نئونی */
+}
+
+p {
     font-size: 18px;
+    color: #EAEAEA;
 }
 
-section {
-    padding: 100px 20px;
-    min-height: 100vh;
+/* دکمه‌ها */
+.button {
+    display: inline-block;
+    background-color: #00A3FF; /* آبی نئونی */
+    color: #121212;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #00FF99; /* تغییر به سبز نئونی */
+    transform: scale(1.05);
+}
+
+/* استایل بخش پروژه‌ها */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* کارت‌های پروژه */
+.project-card {
+    background-color: #1E1E1E; /* خاکستری تیره */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
 }
 
-#section1 { background-color: #f4f4f4; }
-#section2 { background-color: #e2e2e2; }
-#section3 { background-color: #c0c0c0; }
-#section4 { background-color: #a0a0a0; }
-#section5 { background-color: #808080; }
-#section6 { background-color: #606060; }
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+/* فوتر */
+footer {
+    background-color: #1E1E1E;
+    padding: 15px;
+    color: #EAEAEA;
+    margin-top: 20px;
 }
